@@ -2,8 +2,10 @@
   <div class="container mx-auto px-4 py-8">
     <!-- Page Title -->
     <div class="mb-8 text-center">
-      <h1 class="md:text-5xl text-2xl font-bold text-gray-900 mb-2">Our Products</h1>
-      <p class="text-gray-600">Discover our collection of premium clothing</p>
+      <h1 class="md:text-5xl text-2xl font-bold text-gray-900 mb-2">
+        Ürünlerimiz
+      </h1>
+      <p class="text-gray-600">  discover our collection of premium clothing </p>
     </div>
 
     <!-- Categories Filter -->
@@ -45,27 +47,33 @@
         class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
       >
         <!-- Product Image -->
-        <div class="relative aspect-square overflow-hidden">
-          <img
-            v-if="product.variants[0]?.Images?.[0]"
-            :src="product.variants[0].Images[0].url"
-            :alt="product.variants[0].name"
-            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-          <div
-            v-else
-            class="w-full h-full bg-gray-200 flex items-center justify-center"
-          >
-            <span class="text-gray-400">No Image</span>
+        <NuxtLink :to="`/products/${product.id}`" class="block">
+          <div class="relative aspect-square overflow-hidden">
+            <img
+              v-if="product.variants[0]?.Images?.[0]"
+              :src="product.variants[0].Images[0].url"
+              :alt="product.variants[0].name"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+            <div
+              v-else
+              class="w-full h-full bg-gray-200 flex items-center justify-center"
+            >
+              <span class="text-gray-400">No Image</span>
+            </div>
           </div>
-        </div>
+        </NuxtLink>
 
         <!-- Product Info -->
         <div class="p-4">
-          <h3 class="font-semibold text-lg text-gray-900 mb-2 line-clamp-1">
-            {{ product.name || "Product Name" }}
-          </h3>
+          <NuxtLink :to="`/products/${product.id}`" class="block">
+            <h3
+              class="font-semibold text-lg text-gray-900 mb-2 line-clamp-1 hover:text-gray-700 transition-colors duration-200"
+            >
+              {{ product.name || "Product Name" }}
+            </h3>
+          </NuxtLink>
           <p class="text-gray-600 text-sm mb-3 line-clamp-2">
             {{ product.description || "Product Description" }}
           </p>
@@ -73,11 +81,12 @@
             <span class="text-xl font-bold text-gray-900">
               {{ product.variants[0]?.price || "Price" }}
             </span>
-            <button
-              class="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors duration-200 text-sm font-medium"
+            <NuxtLink
+              :to="`/products/${product.id}`"
+              class="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors duration-200 text-sm font-medium inline-block text-center"
             >
               View Details
-            </button>
+            </NuxtLink>
           </div>
         </div>
       </div>

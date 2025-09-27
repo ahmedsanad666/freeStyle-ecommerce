@@ -81,6 +81,7 @@
       </div>
     </nav>
     <slot />
+    <FooterSec />
   </div>
 </template>
 

@@ -14,10 +14,10 @@ export const useProductsStore = defineStore("products", () => {
         // basic white tshirt
         {
           id: 1,
-          name: "SİYAH BASIC T-SHIRT",
+          name: "BAYAZ BASIC T-SHIRT",
           description:
             "SOL ÖN GÖĞÜS BASKI LOGO ÖLÇÜSÜ : 7,50cm X 10,00cm SIRT BASKI LOGO ÖLÇÜSÜ : 25,00cm X 25,00cm",
-          price: "175₺",
+          price: "185₺",
           sizes: [
             {
               id: 1,
@@ -39,13 +39,13 @@ export const useProductsStore = defineStore("products", () => {
             },
             {
               id: 2,
-              url: "/images/products/tshirt/basic/white/pro2.png",
+              url: "/images/products/tshirt/basic/white/back.png",
             },
           ],
         },
         // basic black tshirt
         {
-          id: 1,
+          id: 2,
           name: "SİYAH BASIC T-SHIRT",
           description:
             "SOL ÖN GÖĞÜS BASKI LOGO ÖLÇÜSÜ : 7,50cm X 10,00cm SIRT BASKI LOGO ÖLÇÜSÜ : 25,00cm X 25,00cm",
@@ -93,7 +93,7 @@ export const useProductsStore = defineStore("products", () => {
           name: "BEYAZ 3 İPLİK KAPÜŞONLU SWEATSHIRT",
           description:
             "SOL ÖN GÖĞÜS BASKI LOGO ÖLÇÜSÜ : 7,50cm X 10,00cm SIRT BASKI LOGO ÖLÇÜSÜ : 25,00cm X 25,00cm",
-          price: "400₺",
+          price: "450₺",
           sizes: [
             {
               id: 1,
@@ -113,7 +113,7 @@ export const useProductsStore = defineStore("products", () => {
         },
         // basic black tshirt
         {
-          id: 1,
+          id: 2,
           name: "SİYAH 3 İPLİK KAPÜŞONLU SWEATSHIRT",
           description:
             "SOL ÖN GÖĞÜS BASKI LOGO ÖLÇÜSÜ : 7,50cm X 10,00cm SIRT BASKI LOGO ÖLÇÜSÜ : 25,00cm X 25,00cm Total Pieces",
@@ -151,7 +151,7 @@ export const useProductsStore = defineStore("products", () => {
           name: "SİYAH OVERSIZE T-SHIRT",
           description:
             "SOL ÖN GÖĞÜS BASKI LOGO ÖLÇÜSÜ : 7,50cm X 10,00cm SIRT BASKI LOGO ÖLÇÜSÜ : 25,00cm X 25,00cm",
-          price: "220₺",
+          price: "280₺",
           sizes: [
             {
               id: 1,
@@ -175,7 +175,7 @@ export const useProductsStore = defineStore("products", () => {
         },
         // basic black tshirt
         {
-          id: 1,
+          id: 2,
           name: "BEYAZ OVERSIZE T-SHIRT",
           description:
             "SOL ÖN GÖĞÜS BASKI LOGO ÖLÇÜSÜ : 7,50cm X 10,00cm SIRT BASKI LOGO ÖLÇÜSÜ : 25,00cm X 25,00cm",
@@ -210,7 +210,7 @@ export const useProductsStore = defineStore("products", () => {
           name: "SİYAH OVERSIZE T-SHIRT",
           description:
             "SOL ÖN GÖĞÜS BASKI LOGO ÖLÇÜSÜ : 7,50cm X 10,00cm SIRT BASKI LOGO ÖLÇÜSÜ : 25,00cm X 25,00cm",
-          price: "220₺",
+          price: "230₺",
           sizes: [
             {
               id: 1,
