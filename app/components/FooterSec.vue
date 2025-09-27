@@ -64,11 +64,11 @@
               >
                 <NuxtLink to="/products">Ürünler</NuxtLink>
               </li>
-              <li
+              <!-- <li
                 class="cursor-pointer hover:text-yellow-400 transition-colors"
               >
                 <NuxtLink to="/contact">İletişim</NuxtLink>
-              </li>
+              </li> -->
               <li
                 class="cursor-pointer hover:text-yellow-400 transition-colors"
               >
@@ -145,7 +145,7 @@
               href="https://horustech.site/ar"
               target="_blank"
               class="text-yellow-400"
-              >Hourstech</a
+              >Horus Tech</a
             >
           </p>
           <div class="flex gap-4">

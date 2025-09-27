@@ -18,8 +18,8 @@
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a
             href="http://wa.me/+905517069491"
-            class="px-8 py-2 bg-red-50 rounded-md flex items-center gap-2"
-            >Contact <whatsapp class="w-10 h-10" /></a
+            class="px-8 py-2 bg-red-50 rounded-md  border-2 border-black flex items-center gap-3"
+            >Contact <whatsapp class="w-10 h-10 text-green-600" /></a
           >
           <button
             data-collapse-toggle="navbar-sticky"
@@ -56,7 +56,7 @@
             <li>
               <nuxt-link
                 to="/"
-                class="block py-2     rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                class="block py-2     rounded-sm md:bg-transparent  md:p-0 "
                 aria-current="page"
                 >Anasayfa</nuxt-link
               >
@@ -68,13 +68,13 @@
                 >Ürünler</nuxt-link
               >
             </li>
-            <li>
+            <!-- <li>
               <nuxt-link
                 to="/contact"
                 class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:h md:dark:hover:bg-transparent dark:border-gray-700"
                 >İletişim</nuxt-link
               >
-            </li>
+            </li> -->
             
           </ul>
         </div>
@@ -89,4 +89,10 @@
 import whatsapp from "@/assets/svgs/whatsapp.svg";
 </script>
 
-<style></style>
+<style lang="scss"  scoped>
+
+.router-link-active{
+// color: !important;
+@apply text-blue-500;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero Section with Slider -->
-    <section class="relative h-[75vh] overflow-hidden">
+    <section class="relative md:h-[75vh] h-[50vh] overflow-hidden">
       <!-- Slider Container -->
       <div class="relative h-full">
         <!-- Slide 1: Basic White T-Shirt -->
@@ -20,13 +20,13 @@
             </div>
             <!-- Product Text -->
             <div class="w-1/2 pl-8">
-              <h1 class="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 class="md:text-5xl text-xl font-bold text-gray-900 mb-6 leading-tight">
                 {{ heroSlides[0].title }}
               </h1>
-              <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p class="md:text-xl text-sm text-gray-600 mb-8 leading-relaxed">
                 {{ heroSlides[0].description }}
               </p>
-              <div class="text-3xl font-bold text-black mb-6">
+              <div class="md:text-3xl text-lg font-bold text-black mb-6">
                 {{ heroSlides[0].price }}
               </div>
               <NuxtLink
@@ -55,13 +55,13 @@
             </div>
             <!-- Product Text -->
             <div class="w-1/2 pl-8">
-              <h1 class="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 class="md:text-5xl text-xl font-bold text-gray-900 mb-6 leading-tight">
                 {{ heroSlides[1].title }}
               </h1>
-              <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p class="md:text-xl text-sm text-gray-600 mb-8 leading-relaxed">
                 {{ heroSlides[1].description }}
               </p>
-              <div class="text-3xl font-bold text-black mb-6">
+              <div class="md:text-3xl text-lg font-bold text-black mb-6">
                 {{ heroSlides[1].price }}
               </div>
               <NuxtLink
@@ -90,13 +90,13 @@
             </div>
             <!-- Product Text -->
             <div class="w-1/2 pl-8">
-              <h1 class="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 class="md:text-5xl text-xl font-bold text-gray-900 mb-6 leading-tight">
                 {{ heroSlides[2].title }}
               </h1>
-              <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p class="md:text-xl text-sm text-gray-600 mb-8 leading-relaxed">
                 {{ heroSlides[2].description }}
               </p>
-              <div class="text-3xl font-bold text-black mb-6">
+              <div class="md:text-3xl text-lg font-bold text-black mb-6">
                 {{ heroSlides[2].price }}
               </div>
               <NuxtLink
